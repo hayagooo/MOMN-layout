@@ -1,0 +1,561 @@
+@font-face {
+    font-family: arciform;
+    src: url(../fonts/Arciform.otf);
+}
+
+@font-face {
+    font-family: monserrat;
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: viga;
+    src: url(../fonts/Viga-Regular.ttf);
+}
+
+.monserrat {
+    font-family: monserrat;
+}
+
+.poppins {
+    font-family: poppins;
+}
+
+.viga {
+    font-family: viga;
+}
+
+.arciform {
+    font-family: arciform;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+    font-family: viga;
+}
+
+p,
+input {
+    font-family: monserrat;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.btn-spring-green {
+    background-color: #14EBA2;
+    border-radius: 10px;
+}
+
+.btn-white {
+    background-color: #ffffff;
+}
+
+.text-spring-green {
+    color: #14EBA2;
+}
+
+.text-dark-green{
+    color: #118A61;
+}
+
+.bg-dark-green, .btn-dark-green{
+    background-color: #118A61;
+}
+
+.bg-spring-green {
+    background-color: #14EBA2;
+}
+
+.p-absolute {
+    position: absolute;
+}
+
+.p-relative {
+    position: relative;
+}
+
+.input-search {
+    border-radius: 10px !important;
+}
+
+
+.navbar-brand img {
+    width: 60px;
+}
+
+.nav-link {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+footer {
+    background-image: url(../img/background/footer.png);
+    background-size: cover;
+    position: relative;
+}
+
+footer .container .footer-content {
+    top: -140px;
+}
+
+footer .container .footer-content .footer-right {
+    top: 11rem;
+}
+
+footer .container .row-nav-footer {
+    top: -2rem;
+}
+
+.copyright div {
+    padding-left: 120px;
+    vertical-align: middle;
+}
+
+.copyright img {
+    width: 40px;
+    height: 30px;
+}
+
+.img-link-download {
+    height: 46px;
+}
+
+.navbar-footer img {
+    width: 60px;
+}
+
+.navbar-footer span {
+    font-size: 30px;
+    vertical-align: middle;
+}
+
+.navbar-footer ul li {
+    list-style: none;
+}
+
+.navbar-footer ul li a {
+    color: black;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .footer-right h2 {
+        font-size: 25px;
+    }
+
+    .hr {
+        top: 330px;
+    }
+
+    .copyright {
+        margin-top: 4.5rem;
+    }
+
+    .copyright div {
+        margin-top: .5rem;
+        padding-left: 15%;
+    }
+
+    .copyright .d-flex img {
+        margin-top: 5px;
+    }
+
+    .copyright .d-flex p {
+        font-size: 14px;
+        margin-left: 20px !important;
+    }
+
+    footer .container .footer-content {
+        top: 2rem;
+    }
+
+    .footer-right div * {
+        height: 46px;
+        font-size: 16px;
+        width: 140px;
+    }
+
+    footer .container .footer-content .footer-right {
+        top: 0;
+    }
+
+    footer .container .row-nav-footer {
+        top: 4rem;
+    }
+
+}
+
+/* game page */
+.game-thumbnail div {
+    overflow: hidden;
+    border-radius: 10px;
+    background: linear-gradient(to right, #20BD88, #20BD88, #ffffff);
+}
+
+.game-thumbnail:hover img {
+    transform: scale(1.1);
+    opacity: .7;
+    overflow: hidden;
+    transition: 0.3s all;
+}
+
+.popular-game{
+    border-radius: 0 70px 0 0;
+    background-image: url(../img/game/valorant.jpg);
+    background-size: cover;
+    padding: 50%;
+    background-position: center;
+}
+
+.bg-gradient {
+    background: linear-gradient(to right, #20BD88, #118A61);
+}
+
+.modal-content-game {
+    background-image: url(../img/background/gameModal.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+
+.btn-modal-game {
+    border-radius: 5px;
+    position: relative;
+    top: 35px;
+}
+
+.inputId-game {
+    letter-spacing: 25px;
+}
+
+.card-game {
+    background: transparent;
+    border: 0;
+    border-radius: 10px;
+}
+
+.img-card-game {
+    border-radius: 10px;
+    height: 200px;
+}
+
+
+.card-game-text {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, .85), rgba(0, 0, 0, .7), rgb(0, 0, 0, 0));
+    border-radius: 10px;
+    height: 200px;
+    transition: 0.4s ease-out;
+}
+
+.card-game-text:hover {
+    background-image: linear-gradient(to right, rgba(20, 235, 162, 1), rgba(20, 235, 162, .5), rgb(0, 0, 0, 0));
+    border: 4px solid #14EBA2;
+}
+
+.card-game-text:hover p {
+    color: white;
+    font-weight: bold;
+}
+
+.card-game-text h4 {
+    margin-top: 80px;
+}
+
+.card-game-text p {
+    margin-top: 30px;
+}
+
+.game-list{
+    left: 10px;
+    top: 130px;
+    overflow: scroll;
+    overflow-x: hidden;
+    max-height: 600px;
+    padding-bottom: 70px;
+}
+
+.game-list::-webkit-scrollbar{
+    display :none
+}
+
+/* end game */
+
+/* signUp page */
+.main-signUp {
+    background-image: url(../img/background/Signup.png);
+    background-size: 80%;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.line {
+    width: 70px;
+    height: 4px;
+    background-color: #14EBA2;
+}
+
+.btn-signUp:hover,
+.btn-signUp-active {
+    background-color: #CFFFEF;
+    border: 0 !important;
+}
+
+.btn-signUp-send {
+    border-radius: 15px;
+    box-shadow: 0 0.9rem 1rem #14eba383;
+
+}
+
+.btn-modal-signUp {
+    border-radius: 5px;
+    position: relative;
+    top: 27px;
+    float: right;
+}
+
+.modal-content-signUp .hr{
+    width: 70px;
+    height: 5px;
+    border-radius: 2.5px;
+
+}
+
+@media only screen and (max-width : 767px){
+    .main-signUp {
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+    }
+}
+/* end signUp */
+
+/* partner */
+.jumbotron-partner {
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../img/background/partner.png);
+    border-radius: 0px;
+    background-position: center;
+    background-size: cover;
+}
+
+.jumbotron-partner .jumbotron-content{
+    margin-top: 25.48%;
+    margin-bottom: 18%;
+
+}
+
+.jumbotron-partner .container .jumbotron-content{
+    font-size: 20px;
+}
+
+.hr-title-partner {
+    height: 6px;
+    border-radius: 6px;
+}
+
+.icon{
+    left: 0;
+    position: absolute;
+    top: 15%;
+}
+
+.img-shape {
+    height: 200px;
+}
+
+.carousel-content{
+    background-image: linear-gradient(to right, rgba(0,0,0,0),rgba(0,0,0,0.3),rgba(0,0,0,0.8)),url(../img/background/Group16.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 20px;
+    padding-left: 6rem;
+}
+
+.carousel-content h5 {
+    margin-top: 6rem;
+}
+
+.carousel-content .hr {
+    height: 4px;
+    border-radius: 2px;
+    background-color: #14EBA2;
+    width: 100px;
+}
+
+.carousel-control-prev,
+.carousel-control-next{
+    width: auto;
+    opacity: 1;
+}
+
+.carousel-next-icon
+.carousel-prev-icon{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: no-repeat 50% / 100% 100%;
+}
+
+.carousel-control-prev div,
+.carousel-control-next div {
+    background-color: #CFFFEF;
+    transition: 0.2s ease;
+    color: #20BD88;
+    font-size: 30px;
+}
+
+.carousel-control-prev:hover div,
+.carousel-control-next:hover div{
+    opacity: 1;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color:  #CFFFEF;
+}
+
+.carousel-indicators li:hover,
+.carousel-indicators .active {
+    background-color: #118A61;
+}
+
+.img-rekan {
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+}
+
+.img-rekan img {
+    width: 86.5%;
+}
+
+.carousel-content .row h4{
+    color: #118A61;
+}
+.box-bisnis{
+    margin-top: 80px;
+}
+
+.box-bisnis div{
+    border-radius: 20px;
+    background-image: url(../img/background/bisnis-box.png);
+}
+
+.box-bisnis div img {
+    transform: translateY(-50%);
+    padding: 0.4rem;
+}
+
+.box-bisnis div h3{
+    transform: translateY(-80px);
+}
+
+.box-bisnis-footer {
+    transform: translateY(-50px);
+    border-radius: 15px;
+}
+
+.box-bisnis-footer img{
+    width: 50px;
+}
+
+.box-bisnis-footer button {
+    font-size: 18px;
+}
+
+.box-bisnis div p {
+    margin-bottom: 150px;
+}
+
+.browse-bussiness{
+    background-color: #CFFFEF;
+    border-radius: 20px;
+}
+
+.browse-bussiness .grup3{
+    border-radius: 10px;
+    margin-left: auto;
+}
+
+.btn-partner{
+    background-color: #CFFFEF;
+    transition: .3s ease-in;
+}
+
+.btn-partner:hover, .btn-group-partner .active{
+    background-color: #14EBA2;
+}
+
+.partner-list div div img {
+    height: 35px;
+    max-width: 110px;
+}
+.partner-list div div {
+    border-radius: 10px;
+    padding-top: 2rem ;
+    padding-bottom: 2rem;
+    background-color: rgb(247, 247, 247);
+}
+
+.partner-list div div:hover {
+   background-color: #CFFFEF;
+}
+
+.carousel-inner{
+    padding-top: 4rem;
+}
+
+@media only screen and (max-width : 767px){
+    .carousel-content{
+        padding-left: 2.5rem;
+    }
+
+    .carousel-content .row h5{
+        font-size: 15px;
+        margin-top: 6%;
+    }
+    
+    .carousel-content .row .hr{
+        margin-top: .5rem!important;
+        margin-bottom: .5rem!important;
+    }
+
+    .carousel-content .row h4{
+        font-size: 14px;
+        color: #118A61;
+    }
+
+    .carousel-content .row p{
+        font-size: 10px;
+        margin-bottom: 0px!important;
+    }
+
+    .img-rekan{
+        right: 80px;
+    }
+
+    .img-rekan img {
+        width: 120%;
+        height: 270px;
+    }
+}
+
+/* end partner */

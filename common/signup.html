@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="stylesheet" href="../src/css/animate.min.css">
+    <link rel="stylesheet" href="../src/css/aos.css">
+    <link rel="stylesheet" href="../src/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../src/css/fontawesome.min.css">
+    <link rel="stylesheet" href="../src/css/all.min.css">
+    <link rel="stylesheet" href="../src/css/slick.css">
+    <link rel="stylesheet" href="../src/css/slick-theme.css">
+    <link rel="stylesheet" href="../src/css/auth.css">
+
+</head>
+
+<body>
+    <section class="main-signUp">
+        <nav class="navbar pl-0 bg-transparent navbar-expand-lg navbar-dark">
+            <div class="container pl-2">
+                <a class="navbar-brand" href="#">
+                    <img src="../src/img/logo/Momn.png" class="d-inline-block align-top">
+                    <h3 class="d-inline-block text-spring-green mt-2">Daftar</h3>
+                </a>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row ">
+                <div class="d-flex align-items-center">
+                    <div class="line rounded-pill"></div>
+                    <p class="mt-3 text-spring-green ml-3 viga" style="font-size: 18px;">Daftar Dengan</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mt-2 pl-0">
+                    <div
+                        class="w-auto border btn-signUp-active btn-signUp-google py-2 px-3 d-inline-block rounded btn-signUp">
+                        <img src="../src/img/logo/google.png" />
+                        <span>Sign up with Google</span>
+                    </div>
+                    <div class="w-auto border ml-4 btn-signUp-facebook py-2 px-3 d-inline-block rounded btn-signUp">
+                        <img src="../src/img/logo/facebook.png" alt="">
+                        <span>Sign up with Facebook </span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 ">
+                    <form action="post" class="mt-5 row">
+                        <div class="form-group col-6 pl-0">
+                            <input type="text" class="form-control" name="username" id="username"
+                                placeholder="Username">
+                        </div>
+                        <div class="form-group col-6 pl-0">
+                            <input type="text" class="form-control" name="email" id="email" placeholder="Email">
+                        </div>
+                        <div class="form-group col-12 pl-0">
+                            <input type="text" class="form-control" name="phone-number" id="phone-number"
+                                placeholder="Phone Number">
+                        </div>
+                        <div class="form-group col-12 pl-0">
+                            <div class="input-group">
+                                <input type="password" class="form-control" id="password"
+                                    placeholder="Password">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i toggle="#password-field" class="fa fa-fw fa-eye field_icon toggle-password"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-check mt-3 col-8 form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="agrrement" value="agree">
+                            <label class="form-check-label ml-4" for="agrrement">I've read and agree with Terms of
+                                Service and Our Privacy Policy</label>
+                        </div>
+                        <div class="col-6 pl-0 mt-5">
+                            <button type="button" class="btn btn-signUp-send bg-spring-green px-4 py-3"
+                                data-toggle="modal" data-target="#modal-success">
+                                <i class="fas fa-chevron-right fa-2x"></i>
+                            </button>
+                        </div>
+                        <p class="text-dark col-12 mt-4 pl-0" style="font-size:14px;color:grey">Sudah punya akun? <a
+                                href="login.html">Login</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="modal fade" id="modal-success" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog modal-dialog-centered">
+            <div class="modal-content p-0 modal-content-signUp border-0 bg-spring-green">
+                <div class="modal-header border-0 pb-0 mb-2 px-4 mt-3">
+                    <h5 class="modal-title">Proses Daftar Berhasil</h5>
+                </div>
+                <div class="hr ml-4 p-0 bg-dark"></div>
+                <div class="modal-body px-4">
+                    <p class="bold"> Hai User, Selamat anda telah menjadi bagian dari pengguna MOMN, Kini anda dapat
+                        login dengan akun yang sudah anda daftarkan barusan.</p>
+                </div>
+                <div class="p-0 border-0">
+                    <button class="btn bg-light py-3 px-5 btn-modal-signUp"
+                        onclick="location.href='../index.html'">Login Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-failed" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog modal-dialog-centered">
+            <div class="modal-content p-0 modal-content-signUp border-0" style="background-color: #FD445D ;">
+                <div class="modal-header border-0 pb-0 mb-2 px-4 mt-3">
+                    <h5 class="modal-title">Ada yang salah saat pendaftaran</h5>
+                </div>
+                <div class="hr ml-4 p-0 bg-light"></div>
+                <div class="modal-body px-4 ">
+                    <p class="bold">Mohon Maaf Sistem ada yang bermasalah, Harap coba lagi atau hubungi customer service
+                        MOMN.</p>
+                </div>
+                <div class="p-0 border-0">
+                    <button class="btn bg-light py-3 px-5 btn-modal-signUp" data-dismiss="modal" aria-label="Close">Oke
+                        Mengerti !</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="../src/js/jquery-3.5.1.min.js"></script>
+<script src="../src/js/bootstrap.min.js"></script>
+<script src="../src/js/fontawesome.min.js"></script>
+<script src="../src/js/all.min.js"></script>
+<script src="../src/js/slick.min.js"></script>
+<script src="../src/js/aos.js"></script>
+<script src="../src/js/script.js"></script>
+<script>
+    $("body").on('click', '.toggle-password', function () {
+        $(this).toggleClass("fa-eye fa-eye-slash");
+        var input = $("#password");
+        if (input.attr("type") === "password") {
+            input.attr("type", "text");
+        } else {
+            input.attr("type", "password");
+        }
+
+    });
+</script>
+
+</html>
