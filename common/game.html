@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game</title>
-    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="shortcut icon" href="../src/img/logo/Momn.png" type="image/x-icon">
     <link rel="stylesheet" href="../src/css/animate.min.css">
     <link rel="stylesheet" href="../src/css/aos.css">
     <link rel="stylesheet" href="../src/css/bootstrap.min.css">
@@ -17,114 +17,140 @@
 
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-gradient fixed-top">
-        <div class="container-fluid px-3">
-            <a class="navbar-brand d-flex" href="#">
-                <img src="../src/img/logo/Momn-white.png" alt="">
-                <h5 class="mx-2 my-2 bold">MOMN</h5>
+<body >
+    <nav class="navbar navbar-expand-lg navbar-gradient navbar-light py-2 position-fixed w-100">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand text-primary text-head" href="index.html">
+                <img src="../src/img/logo/Momn-white.png" class="mr-2" alt="">
+                <h5 class="position-relative d-inline-block text-head text-light" style="top: 2px;">MOMN</h5>
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item ml-3">
-                        <a class="nav-link" href="../index.html">Home <span class="sr-only"></span></a>
+            <div class="">
+                <button class="navbar-toggler d-lg-none" id="toggle-nav-btn">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+            </div>
+            <div class="overlay-black position-fixed" id="toggle-nav-closeable"></div>
+            <div class="collapse navbar-collapse nav-menus" id="toggle-nav">
+                <ul class="navbar-nav ml-auto mt-lg-0 mt-0 mt-lg-0">
+                    <li class="d-lg-none d-inline-block" style="height: 200px;">
+                        <div class="w-100 py-5 pb-3 px-5 nav-head-mobile h-100 position-relative">
+                            <div class="position-absolute"></div>
+                            <div class="position-relative pb-5 pt-2" style="z-index: 20;">
+                                <a class="navbar-brand text-black text-head" href="index.html">
+                                    <img src="../src/img/logo/Momn-black.png" width="60ppx" alt=""
+                                        class="d-inline-block pb-4">
+                                    <div class="d-inline-block">
+                                        <h5 class="pt-4 ml-2 mb-0">MOMN</h5>
+                                        <p style="font-size: 14px;" class="ml-2 bold">Dompet digital</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </li>
-                    <li class="nav-item ml-3">
-                        <a class="nav-link" href="">Fitur</a>
+                    <li class="nav-item pl-lg-0 pl-5 pt-lg-0 mr-4 pt-3 nactive">
+                        <a class="nav-link" href="../index.html">Home </a>
                     </li>
-                    <li class="nav-item ml-3">
-                        <a class="nav-link" href="">Partner</a>
+                    <li class="nav-item pl-lg-0 pl-5 pt-lg-0 mr-4 pt-3 nactive">
+                        <a class="nav-link" href="fitur.html">Fitur</a>
                     </li>
-                    <li class="nav-item ml-3">
-                        <a class="nav-link" href="">Carier</a>
+                    <li class="nav-item pl-lg-0 pl-5 pt-lg-0 mr-4 pt-3 nactive">
+                        <a class="nav-link" href="partner.html">Partner</a>
                     </li>
-                    <li class="nav-item ml-3">
-                        <a class="nav-link" href="">promo</a>
+                    <li class="nav-item pl-lg-0 pl-5 pt-lg-0 mr-4 pt-3 nactive">
+                        <a class="nav-link" href="career.html">Career</a>
                     </li>
-                    <li class="nav-item ml-3 active">
-                        <a class="nav-link" href="">Games</a>
+                    <li class="nav-item pl-lg-0 pl-5 pt-lg-0 mr-4 pt-3 nactive">
+                        <a class="nav-link" href="promo.html">Promo</a>
                     </li>
-                    <li class="nav-item ">
-                        <button class="btn btn-spring-green text-dark ml-2 px-3 font-weight-bold">Login</button>
+                    <li class="nav-item pl-lg-0 pl-5 pt-lg-0 mr-4 pt-3 active">
+                        <a class="nav-link" href="game.html">Games</a>
+                    </li>
+                    <li class="nav-item pl-lg-0 pl-5 pt-lg-0 mr-4 pt-3">
+                        <button class="btn btn-spring-green text-dark px-3 font-weight-bold">Login</button>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="container pt-5">
-        <div class="row justify-content-center mt-5">
-            <div class="col-md-4 d-flex">
-                <div class="input-group shadow input-search">
-                    <input type="text" class="form-control py-2 border-0" placeholder="Cari Game">
-                    <div class="">
-                        <button class="btn btn-spring-green py-2" id=""><i class="fas fa-search"></i></button>
+    <div class="top">
+        <div class="container pt-5">
+            <div class="row justify-content-center mt-5 pt-4">
+                <div class="col-md-5 p-relative" style="top: 30px;">
+                    <div class="input-group shadow bg-light input-search">
+                        <input type="text" class="form-control bold d-inline-block py-3  border-0" style="height: auto;"
+                            placeholder="Cari Game">
+                        <div class="">
+                            <button class="btn btn-spring-green d-inline-block py-3 px-3" id=""><i
+                                    class="fas fa-search"></i></button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="w-100 row">
-        <div class="col-md-6 col-12" style=" top: 100px;">
-            <h2 class="ml-4 mb-2 bold">Valorant</h2>
-            <div class="w-100 popular-game" data-toggle="modal" data-target="#valorantModal"></div>
-            <span class="p-absolute bg-light p-2 shadow rounded" style="right: 40px;top: 6px;right: 80px;">
-                <img src="../src/img/logo/valorant.png">
-            </span>
-        </div>
-        <div class="col-md-6 col-12 mt-3 game-list">
-            <div class="row">
-                <div class="col-md-6 col-6 game-thumbnail ">
-                    <h5 class="bold">Mobile Legends</h5>
-                    <div>
-                        <img src="../src/img/game/mobile legend.png" class="w-100 x">
+    <div>
+        <div class="w-100 row">
+            <div class="col-md-6 col-12 p-0" style=" top: 100px;">
+                <h2 class="ml-5 pl- mb-2 bold">Valorant</h2>
+                <div class="w-100 popular-game " data-toggle="modal" data-target="#valorantModal">
+                    <div class="w-100  p-absolute overlay-game-popular">
+                        <h1 class=" p-absolute text-center ">Popular game</h1>
                     </div>
                 </div>
-                <div class="col-md-6 col-6 game-thumbnail">
-                    <h5 class="bold">AoV</h5>
-                    <div>
-                        <img src="../src/img/game/arena of valor.png" class="w-100 ">
+                <span class="p-absolute bg-light p-2 shadow rounded" style="right: 40px;top: 6px;right: 80px;">
+                    <img src="../src/img/logo/valorant.png">
+                </span>
+            </div>
+            <div class="col-md-6 col-12 mt-3 game-list">
+                <div class="row">
+                    <div class="col-md-6 col-6 game-thumbnail ">
+                        <h5 class="bold">Mobile Legends</h5>
+                        <div>
+                            <img src="../src/img/game/mobile legend.png" class="w-100 x">
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-6 col-6 game-thumbnail mt-4">
-                    <h5 class="bold">PUBG</h5>
-                    <div>
-                        <img src="../src/img/game/PUBGM.png" class="w-100 ">
+                    <div class="col-md-6 col-6 game-thumbnail">
+                        <h5 class="bold">AoV</h5>
+                        <div>
+                            <img src="../src/img/game/arena of valor.png" class="w-100 ">
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-6 col-6 game-thumbnail mt-4">
-                    <h5 class="bold">CODM</h5>
-                    <div>
-                        <img src="../src/img/game/CODM.png" class="w-100 ">
+                    <div class="col-md-6 col-6 game-thumbnail mt-4">
+                        <h5 class="bold">PUBG</h5>
+                        <div>
+                            <img src="../src/img/game/PUBGM.png" class="w-100 ">
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-6 col-6 game-thumbnail mt-4">
-                    <h5 class="bold">APEX</h5>
-                    <div>
-                        <img src="../src/img/game/apex legends.png" class="w-100">
+                    <div class="col-md-6 col-6 game-thumbnail mt-4">
+                        <h5 class="bold">CODM</h5>
+                        <div>
+                            <img src="../src/img/game/CODM.png" class="w-100 ">
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-6 col-6 game-thumbnail mt-4">
-                    <h5 class="bold">Fornite</h5>
-                    <div>
-                        <img src="../src/img/game/fornite.png" class="w-100">
+                    <div class="col-md-6 col-6 game-thumbnail mt-4">
+                        <h5 class="bold">APEX</h5>
+                        <div>
+                            <img src="../src/img/game/apex legends.png" class="w-100">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-6 game-thumbnail mt-4">
+                        <h5 class="bold">Fornite</h5>
+                        <div>
+                            <img src="../src/img/game/fornite.png" class="w-100">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <footer>
+    <footer class="mt-4">
         <div class="container">
             <div class="row p-relative footer-content">
-                <div class="col-5 px-5" >
+                <div class="col-5 px-5 mt-3">
                     <img src="../src/img/item/laptop.png" class="w-100 img-footer">
                 </div>
                 <div class="col-7 footer-right">
-                    <h2 class="bold " >Ayo Pakai #DompetOnline <br>Sekarang Juga</h2>
+                    <h2 class="bold ">Ayo Pakai #DompetOnline <br>Sekarang Juga</h2>
                     <div class="d-inline">
                         <button class="btn btn-white mt-3 mr-2 py-2 px-2">Login sekarang</button>
                         <img class="img-link-download mt-3" src="../src/img/item/google_play.png" alt="">
@@ -135,26 +161,26 @@
             </div>
             <div class="row p-relative row-nav-footer">
                 <div class="col-md-6 navbar-footer">
-                    <img src="../src/img/logo/Momn-black.png" >
+                    <img src="../src/img/logo/Momn-black.png">
                     <span class="viga ml-3 bold">MOMN</span>
                     <ul class="p-0 d-flex">
-                        <li class="nav-item ml-1">
-                            <a class="nav-link pl-0" href="../index.html">Home <span class="sr-only"></span></a>
+                        <li class="nav-item ml-1 nactive">
+                            <a class="nav-link pl-0" href="../index.html">Home</a>
                         </li>
-                        <li class="nav-item ml-1">
-                            <a class="nav-link" href="">Fitur</a>
+                        <li class="nav-item ml-1 nactive">
+                            <a class="nav-link" href="fitur.html">Fitur</a>
                         </li>
-                        <li class="nav-item ml-1">
-                            <a class="nav-link" href="">Partner</a>
+                        <li class="nav-item ml-1 nactive ">
+                            <a class="nav-link" href="partner.html">Partner</a>
                         </li>
-                        <li class="nav-item ml-1">
-                            <a class="nav-link" href="">Carier</a>
+                        <li class="nav-item ml-1 nactive">
+                            <a class="nav-link" href="career.html">Career</a>
                         </li>
-                        <li class="nav-item ml-1">
-                            <a class="nav-link" href="">promo</a>
+                        <li class="nav-item ml-1 nactive">
+                            <a class="nav-link" href="promo.html">Promo</a>
                         </li>
-                        <li class="nav-item ml-1 active">
-                            <a class="nav-link" href="">Games</a>
+                        <li class="nav-item ml-1 active ">
+                            <a class="nav-link" href="game.html">Games</a>
                         </li>
                     </ul>
                 </div>
@@ -172,7 +198,7 @@
             <div class="row">
                 <div class="col-md-6 copyright col-6 p-relative bg-light py-2" style="border-radius: 0 15px 0 0;">
                     <div class="d-flex">
-                        <img src="../src/img/logo/Logo 1.png" >
+                        <img src="../src/img/logo/Logo 1.png">
                         <p class="mb-0 ml-2">@2020 Developed by SideScript Team</p>
                     </div>
                 </div>
@@ -196,8 +222,9 @@
                     <div class="row mt-3 ">
                         <div class="col-xl-4 col-6 mb-3">
                             <div class="card card-game">
-                                <img src="../src/img/game/card-game-modal-01.png" alt="" class="w-100 p-relative img-card-game">
-                                <div class="card-body p-absolute w-100 card-game-text" >
+                                <img src="../src/img/game/card-game-modal-01.png" alt=""
+                                    class="w-100 p-relative img-card-game">
+                                <div class="card-body p-absolute w-100 card-game-text">
                                     <h4 class="card-title text-light bold viga bold">420 Points</h4>
                                     <p class="text-spring-green">Rp.50.000,00</p>
                                 </div>
@@ -205,8 +232,9 @@
                         </div>
                         <div class="col-xl-4 col-6 mb-3">
                             <div class="card card-game">
-                                <img src="../src/img/game/card-game-modal-02.png" alt="" class="w-100 p-relative img-card-game">
-                                <div class="card-body p-absolute w-100 card-game-text" >
+                                <img src="../src/img/game/card-game-modal-02.png" alt=""
+                                    class="w-100 p-relative img-card-game">
+                                <div class="card-body p-absolute w-100 card-game-text">
                                     <h4 class="card-title text-light bold viga bold">700 Points</h4>
                                     <p class="text-spring-green">Rp.80.000,00</p>
                                 </div>
@@ -214,8 +242,9 @@
                         </div>
                         <div class="col-xl-4 col-6 mb-3">
                             <div class="card card-game">
-                                <img src="../src/img/game/card-game-modal-03.png" alt="" class="w-100 p-relative img-card-game">
-                                <div class="card-body p-absolute w-100 card-game-text" >
+                                <img src="../src/img/game/card-game-modal-03.png" alt=""
+                                    class="w-100 p-relative img-card-game">
+                                <div class="card-body p-absolute w-100 card-game-text">
                                     <h4 class="card-title text-light bold viga bold">1.375 Points</h4>
                                     <p class="text-spring-green">Rp.150.000,00</p>
                                 </div>
@@ -223,8 +252,9 @@
                         </div>
                         <div class="col-xl-4 col-6 mb-3">
                             <div class="card card-game">
-                                <img src="../src/img/game/card-game-modal-04.png" alt="" class="w-100 p-relative img-card-game">
-                                <div class="card-body p-absolute w-100 card-game-text" >
+                                <img src="../src/img/game/card-game-modal-04.png" alt=""
+                                    class="w-100 p-relative img-card-game">
+                                <div class="card-body p-absolute w-100 card-game-text">
                                     <h4 class="card-title text-light bold viga bold">2.400 Points</h4>
                                     <p class="text-spring-green">Rp.250.000,00</p>
                                 </div>
@@ -232,8 +262,9 @@
                         </div>
                         <div class="col-xl-4 col-6 mb-3">
                             <div class="card card-game">
-                                <img src="../src/img/game/card-game-modal-05.png" alt="" class="w-100 p-relative img-card-game">
-                                <div class="card-body p-absolute w-100 card-game-text" >
+                                <img src="../src/img/game/card-game-modal-05.png" alt=""
+                                    class="w-100 p-relative img-card-game">
+                                <div class="card-body p-absolute w-100 card-game-text">
                                     <h4 class="card-title text-light bold viga bold">4.000 Points</h4>
                                     <p class="text-spring-green">Rp.400.000,00</p>
                                 </div>
@@ -241,8 +272,9 @@
                         </div>
                         <div class="col-xl-4 col-6 mb-3">
                             <div class="card card-game">
-                                <img src="../src/img/game/card-game-modal-06.png" alt="" class="w-100 p-relative img-card-game">
-                                <div class="card-body p-absolute w-100 card-game-text" >
+                                <img src="../src/img/game/card-game-modal-06.png" alt=""
+                                    class="w-100 p-relative img-card-game">
+                                <div class="card-body p-absolute w-100 card-game-text">
                                     <h4 class="card-title text-light bold viga bold">8.150 Points</h4>
                                     <p class="text-spring-green">Rp.800.000,00</p>
                                 </div>
@@ -250,8 +282,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer  border-0">
-                    <button class="btn btn-spring-green px-5 btn-modal-game">Selanjutnya <i class="fas ml-2 fa-play"></i></button>
+                <div class="modal-footer border-0">
+                    <button class="btn btn-spring-green px-5 py-3 btn-modal-game">Selanjutnya <i
+                            class="fas ml-2 fa-play"></i></button>
                 </div>
             </div>
         </div>
@@ -264,5 +297,21 @@
 <script src="../src/js/slick.min.js"></script>
 <script src="../src/js/aos.js"></script>
 <script src="../src/js/script.js"></script>
+<script>
+    $(document).ready(function () {
+        AOS.init()
+
+        function toggleNav() {
+            $('#toggle-nav').toggleClass('nav-menus-show')
+            $('#toggle-nav-closeable').toggleClass('overlay-show')
+        }
+        $('#toggle-nav-btn').click(function () {
+            toggleNav()
+        })
+        $('#toggle-nav-closeable').click(function () {
+            toggleNav()
+        })
+    })
+</script>
 
 </html>

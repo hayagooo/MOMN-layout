@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Partner</title>
-    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="shortcut icon" href="../src/img/logo/Momn.png" type="image/x-icon">
     <link rel="stylesheet" href="../src/css/animate.min.css">
     <link rel="stylesheet" href="../src/css/aos.css">
     <link rel="stylesheet" href="../src/css/bootstrap.min.css">
@@ -18,39 +18,54 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light py-2 position-fixed w-100">
         <div class="container-fluid px-4">
-            <a class="navbar-brand d-flex" href="#">
-                <img src="../src/img/logo/Momn-white.png">
-                <h5 class="mx-2 my-2 bold">MOMN</h5>
+            <a class="navbar-brand text-primary text-head" href="index.html">
+                <img src="../src/img/logo/Momn-white.png" class="mr-2" alt="">
+                <h5 class="position-relative d-inline-block text-head text-light" style="top: 2px;">MOMN</h5>
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item ml-3">
-                        <a class="nav-link" href="../index.html">Home <span class="sr-only"></span></a>
+            <div class="">
+                <button class="navbar-toggler d-lg-none" id="toggle-nav-btn" >
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+            </div>
+            <div class="overlay-black position-fixed" id="toggle-nav-closeable"></div>
+            <div class="collapse navbar-collapse nav-menus" id="toggle-nav">
+                <ul class="navbar-nav ml-auto mt-lg-0 mt-0 mt-lg-0">
+                    <li class="d-lg-none d-inline-block" style="height: 200px;">
+                        <div class="w-100 py-5 pb-3 px-5 nav-head-mobile h-100 position-relative">
+                            <div class="position-absolute"></div>
+                            <div class="position-relative pb-5 pt-2" style="z-index: 20;">
+                                <a class="navbar-brand text-black text-head" href="index.html">
+                                    <img src="../src/img/logo/Momn-black.png" width="60ppx" alt="" class="d-inline-block pb-4">
+                                    <div class="d-inline-block">
+                                        <h5 class="pt-4 ml-2 mb-0">MOMN</h5>
+                                        <p style="font-size: 14px;" class="ml-2 bold">Dompet digital</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </li>
-                    <li class="nav-item ml-3">
-                        <a class="nav-link" href="">Fitur</a>
+                    <li class="nav-item pl-lg-0 pl-5 pt-lg-0 mr-4 pt-3 nactive">
+                        <a class="nav-link" href="../index.html">Home </a>
                     </li>
-                    <li class="nav-item ml-3">
-                        <a class="nav-link" href="">Partner</a>
+                    <li class="nav-item pl-lg-0 pl-5 pt-lg-0 mr-4 pt-3 nactive">
+                        <a class="nav-link" href="fitur.html">Fitur</a>
                     </li>
-                    <li class="nav-item ml-3">
-                        <a class="nav-link" href="">Carier</a>
+                    <li class="nav-item pl-lg-0 pl-5 pt-lg-0 mr-4 pt-3 nactive">
+                        <a class="nav-link" href="partner.html">Partner</a>
                     </li>
-                    <li class="nav-item ml-3">
-                        <a class="nav-link" href="">promo</a>
+                    <li class="nav-item pl-lg-0 pl-5 pt-lg-0 mr-4 pt-3 active">
+                        <a class="nav-link" href="career.html">Career</a>
                     </li>
-                    <li class="nav-item ml-3 active">
-                        <a class="nav-link" href="">Games</a>
+                    <li class="nav-item pl-lg-0 pl-5 pt-lg-0 mr-4 pt-3 nactive">
+                        <a class="nav-link" href="promo.html">Promo</a>
                     </li>
-                    <li class="nav-item ">
-                        <button class="btn btn-spring-green text-dark ml-2 px-3 font-weight-bold">Login</button>
+                    <li class="nav-item pl-lg-0 pl-5 pt-lg-0 mr-4 pt-3 nactive">
+                        <a class="nav-link" href="game.html">Games</a>
+                    </li>
+                    <li class="nav-item pl-lg-0 pl-5 pt-lg-0 mr-4 pt-3">
+                        <button class="btn btn-spring-green text-dark px-3 font-weight-bold">Login</button>
                     </li>
                 </ul>
             </div>
@@ -193,7 +208,7 @@
     </div>
     <div class="container-fluid">
         <div class="justify-content-center row">
-            <div class="text-center p-absolute" style="top: 1800px;">
+            <div class="text-center p-absolute img-pattern15">
                 <img src="../src/img/item/pattern15.png" alt="" style="width: 65%;">
             </div>
         </div>
@@ -217,10 +232,10 @@
                                     MOMN Bisnis!</p>
                             </div>
                         </div>
-                        <div class="w-100 d-inline-block py-3 box-bisnis-footer bg-dark-green">
-                            <button class="btn btn-dark-green text-white">Gabung</button>
-                            <img src="../src/img/logo/Momn-white.png" class="mx-4" alt="">
-                            <button class="btn btn-dark-green text-white">BISNIS</button>
+                        <div class="w-100 py-3 box-bisnis-footer  text-center bg-dark-green">
+                            <h5 class="d-inline-block text-light">Gabung</h5>
+                            <img src="../src/img/logo/Momn-white.png" class="d-inline-block mx-5" alt="">
+                            <h5 class="d-inline-block text-light">Bisnis</h5>
                         </div>
                     </div>
                     <div class="col-md-6 text-center">
@@ -233,10 +248,10 @@
                                     lebarkan sayap bisnis bersama MOMN Enterprise!</p>
                             </div>
                         </div>
-                        <div class="w-100 d-inline-block py-3 box-bisnis-footer bg-dark-green">
-                            <button class="btn btn-dark-green text-white ml-4">Gabung</button>
-                            <img src="../src/img/logo/Momn-white.png" class="mx-3" alt="">
-                            <button class="btn btn-dark-green text-white">ENTERPRISE</button>
+                        <div class="w-100 py-3 box-bisnis-footer pl-5 text-center bg-dark-green">
+                            <h5 class="d-inline-block text-light">Gabung</h5>
+                            <img src="../src/img/logo/Momn-white.png" class="d-inline-block mx-5" alt="">
+                            <h5 class="d-inline-block text-light">ENTERPRISE</h5>
                         </div>
                     </div>
                     <div class="col-md-12 mb-5">
@@ -249,7 +264,8 @@
                                 <p>Cari tahu dan temukan solusi terbaik untuk mengembangkannya!</p>
                             </div>
                             <div class="grup3">
-                                <button type="button" class=" px-5 mt-3 text-white btn bg-dark-green align-items-center">
+                                <button type="button"
+                                    class=" px-5 mt-3 text-white btn bg-dark-green align-items-center">
                                     <h4 class="mt-1">Mulai <i class="fas ml-2 fa-caret-right"></i></h4>
                                 </button>
                             </div>
@@ -266,11 +282,11 @@
                 <div class="hr-title-partner bg-spring-green mb-5 " style="width: 250px">
                 </div>
             </div>
-            <div class="row justify-content-center btn-group-partner" >
-               <button type="button" class="btn px-4 mx-2 active btn-partner">All</button>
-               <button type="button" class="btn px-4 mx-2 btn-partner">Online</button>
-               <button type="button" class="btn px-4 mx-2 btn-partner">Offline</button>
-               <button type="button" class="btn px-4 mx-2 btn-partner">Channel</button>
+            <div class="row justify-content-center btn-group-partner">
+                <button type="button" class="btn px-4 mx-2 active btn-partner">All</button>
+                <button type="button" class="btn px-4 mx-2 btn-partner">Online</button>
+                <button type="button" class="btn px-4 mx-2 btn-partner">Offline</button>
+                <button type="button" class="btn px-4 mx-2 btn-partner">Channel</button>
             </div>
             <div class="row mt-5 partner-list">
             </div>
@@ -282,11 +298,11 @@
     <footer class="mt-4">
         <div class="container">
             <div class="row p-relative footer-content">
-                <div class="col-5 px-5" >
+                <div class="col-5 px-5 mt-3">
                     <img src="../src/img/item/laptop.png" class="w-100 img-footer">
                 </div>
                 <div class="col-7 footer-right">
-                    <h2 class="bold " >Ayo Pakai #DompetOnline <br>Sekarang Juga</h2>
+                    <h2 class="bold ">Ayo Pakai #DompetOnline <br>Sekarang Juga</h2>
                     <div class="d-inline">
                         <button class="btn btn-white mt-3 mr-2 py-2 px-2">Login sekarang</button>
                         <img class="img-link-download mt-3" src="../src/img/item/google_play.png" alt="">
@@ -297,26 +313,26 @@
             </div>
             <div class="row p-relative row-nav-footer">
                 <div class="col-md-6 navbar-footer">
-                    <img src="../src/img/logo/Momn-black.png" >
+                    <img src="../src/img/logo/Momn-black.png">
                     <span class="viga ml-3 bold">MOMN</span>
                     <ul class="p-0 d-flex">
-                        <li class="nav-item ml-1">
-                            <a class="nav-link pl-0" href="../index.html">Home <span class="sr-only"></span></a>
+                        <li class="nav-item ml-1 nactive">
+                            <a class="nav-link pl-0" href="../index.html">Home</a>
                         </li>
-                        <li class="nav-item ml-1">
-                            <a class="nav-link" href="">Fitur</a>
+                        <li class="nav-item ml-1 nactive">
+                            <a class="nav-link" href="fitur.html">Fitur</a>
                         </li>
-                        <li class="nav-item ml-1">
-                            <a class="nav-link" href="">Partner</a>
+                        <li class="nav-item ml-1 nactive ">
+                            <a class="nav-link" href="partner.html">Partner</a>
                         </li>
-                        <li class="nav-item ml-1">
-                            <a class="nav-link" href="">Carier</a>
+                        <li class="nav-item ml-1 nactive">
+                            <a class="nav-link" href="career.html">Career</a>
                         </li>
-                        <li class="nav-item ml-1">
-                            <a class="nav-link" href="">promo</a>
+                        <li class="nav-item ml-1 nactive">
+                            <a class="nav-link" href="promo.html">Promo</a>
                         </li>
-                        <li class="nav-item ml-1 active">
-                            <a class="nav-link" href="">Games</a>
+                        <li class="nav-item ml-1 active ">
+                            <a class="nav-link" href="game.html">Games</a>
                         </li>
                     </ul>
                 </div>
@@ -334,7 +350,7 @@
             <div class="row">
                 <div class="col-md-6 copyright col-6 p-relative bg-light py-2" style="border-radius: 0 15px 0 0;">
                     <div class="d-flex">
-                        <img src="../src/img/logo/Logo 1.png" >
+                        <img src="../src/img/logo/Logo 1.png">
                         <p class="mb-0 ml-2">@2020 Developed by SideScript Team</p>
                     </div>
                 </div>
@@ -350,13 +366,13 @@
 <script src="../src/js/aos.js"></script>
 <script src="../src/js/script.js"></script>
 <script>
-    $(".btn-partner").on("click", function(){
+    $(".btn-partner").on("click", function () {
         $(".btn-partner").removeClass("active")
         $(this).addClass("active")
 
     })
 
-    for( let i = 3; i <= 20; i++){
+    for (let i = 3; i <= 20; i++) {
         $(".partner-list").append(`
             <div class="col-md-2 col-4 mt-4 text-center">
                 <div>
@@ -366,5 +382,20 @@
         `)
     }
 
+    $(document).ready(function () {
+        AOS.init()
+
+        function toggleNav() {
+            $('#toggle-nav').toggleClass('nav-menus-show')
+            $('#toggle-nav-closeable').toggleClass('overlay-show')
+        }
+        $('#toggle-nav-btn').click(function () {
+            toggleNav()
+        })
+        $('#toggle-nav-closeable').click(function () {
+            toggleNav()
+        })
+    })
 </script>
+
 </html>
