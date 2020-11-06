@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Manual</title>
+    <link rel="shortcut icon" href="../src/img/logo/Momn.png" type="image/x-icon">
+    <link rel="stylesheet" href="../src/css/animate.min.css">
+    <link rel="stylesheet" href="../src/css/aos.css">
+    <link rel="stylesheet" href="../src/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../src/css/fontawesome.min.css">
+    <link rel="stylesheet" href="../src/css/all.min.css">
+    <link rel="stylesheet" href="../src/css/slick.css">
+    <link rel="stylesheet" href="../src/css/slick-theme.css">
+    <link rel="stylesheet" href="../src/css/auth.css">
+</head>
+
+<body>
+    <div class="w-100 d-flex" style="flex-wrap: wrap;">
+        <div class="col-md-8 col-12 pl-0">
+            <img src="../src/img/item/pattern 27.png" alt="" class="p-absolute" width="200px">
+            <div class="row justify-content-center ">
+                <div class="col-md-7 col-8 form-login-manual text-center">
+                    <img src="../src/img/logo/Momn.png" alt="" width="14%">
+                    <h3 class="text-spring-green mt-2">MOMN</h3>
+                    <form action="" method="post" class="px-3">
+                        <div class="form-group">
+                            <input type="text" class="form-control-lg form-control px-4" id="username"
+                                placeholder="Username or email or telp" name="username" autofocus>
+                        </div>
+                        <div class="input-group rounded">
+                            <input type="password" class="form-control form-control-lg px-4 border-right-0"
+                                id="password" placeholder="Password">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text border-left-0"><i toggle="#password-field"
+                                        class="fa fa-fw fa-eye field_icon toggle-password"></i></div>
+                            </div>
+                        </div>
+                        <div class="form-group text-left mt-3 ml-2">
+                            <div class="form-check col-6 form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="remember-me" value="true"
+                                    style="transform: scale(2);">
+                                <label class="form-check-label ml-4 bold" for="remember-me"><span class="pt-2">Ingat
+                                        saya</span></label>
+                            </div>
+                            <button type="submit" class="btn py-3 text-center btn-spring-green">
+                                Masuk
+                            </button>
+                        </div>
+                        <div class="form-gruop mt-5 text-left">
+                            <a href="">
+                                <p>Lupa password?</p>
+                            </a>
+                        </div>
+                    </form>
+                    <p class="pt-4 mt-5">Belum punya akun ?<a href="signup.html"><span class="text-spring-green ml-2">Daftar</span></a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-12 p-0 mr-0 bg-spring-green">
+            <img src="../src/img/item/pattern 26.png" alt="" class="p-absolute" width="200px"
+                style="bottom: 0;right: 0;">
+            <div class="bg-light py-5 px-3 login-manual-right p-relative shadow text-center">
+                <img src="../src/img/logo/Momn.png" alt="" width="14%">
+                <h3 class="text-spring-green mt-2">MOMN</h3>
+                <img src="../src/img/item/qr.png"  alt="">
+                <h5 class="mt-4">Scan QR Code ini dengan Aplikasi MOMN di Hpmu</h5>
+                <p>Semua terhubung jadi lebih mudah untuk bertransaksi dengan kami</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../src/js/jquery-3.5.1.min.js"></script>
+<script src="../src/js/bootstrap.min.js"></script>
+<script src="../src/js/fontawesome.min.js"></script>
+<script src="../src/js/all.min.js"></script>
+<script src="../src/js/slick.min.js"></script>
+<script src="../src/js/aos.js"></script>
+<script src="../src/js/script.js"></script>
+<script>
+    $("body").on('click', '.toggle-password', function () {
+        $(this).toggleClass("fa-eye fa-eye-slash");
+        var input = $("#password");
+        if (input.attr("type") === "password") {
+            input.attr("type", "text");
+        } else {
+            input.attr("type", "password");
+        }
+
+    });
+</script>
+
+</html>

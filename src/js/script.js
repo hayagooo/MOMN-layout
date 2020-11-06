@@ -1,4 +1,8 @@
-$(document).ready(function() {
+function redirect(URL) {
+    window.location.href = URL
+}
+
+$(document).ready(function () {
     AOS.init();
     $('.trackers, .news, .teams').slick({
         arrows: false,
@@ -8,8 +12,7 @@ $(document).ready(function() {
         autoplaySpeed: 12000,
         slidesToShow: 1,
         slidestoScroll: 1,
-        responsive: [
-            {
+        responsive: [{
                 breakpoint: 1024,
                 settings: {
                     slidesToShow: 1,
@@ -45,8 +48,7 @@ $(document).ready(function() {
         autoplaySpeed: 11000,
         slidesToShow: 2,
         slidestoScroll: 1,
-        responsive: [
-            {
+        responsive: [{
                 breakpoint: 1024,
                 settings: {
                     slidesToShow: 2,
@@ -85,8 +87,7 @@ $(document).ready(function() {
         autoplaySpeed: 11000,
         slidesToShow: 2,
         slidestoScroll: 1,
-        responsive: [
-            {
+        responsive: [{
                 breakpoint: 1024,
                 settings: {
                     slidesToShow: 1,
@@ -116,7 +117,7 @@ $(document).ready(function() {
         ]
     });
 
-    
+
     $('#rekomend-shop-detail').slick({
         arrows: false,
         dots: true,
@@ -125,8 +126,7 @@ $(document).ready(function() {
         autoplaySpeed: 11000,
         slidesToShow: 3,
         slidestoScroll: 1,
-        responsive: [
-            {
+        responsive: [{
                 breakpoint: 1024,
                 settings: {
                     slidesToShow: 2,
@@ -153,7 +153,7 @@ $(document).ready(function() {
             }
         ]
     });
-    
+
     $('#product-sold').slick({
         arrows: false,
         dots: true,
@@ -163,8 +163,7 @@ $(document).ready(function() {
         slidesToShow: 2,
         centerMode: true,
         slidestoScroll: 1,
-        responsive: [
-            {
+        responsive: [{
                 breakpoint: 1024,
                 settings: {
                     slidesToShow: 1,
@@ -191,7 +190,7 @@ $(document).ready(function() {
             }
         ]
     });
-    
+
     $('#shop-banner').slick({
         arrows: false,
         dots: true,
@@ -203,7 +202,7 @@ $(document).ready(function() {
         centerMode: true,
         centerPadding: '10px'
     });
-    
+
     $('#shop-preview').slick({
         arrows: false,
         slidestoScroll: 1,
@@ -213,7 +212,7 @@ $(document).ready(function() {
         autoplay: false,
         fade: true,
         asNavFor: '#preview-nav'
-    }); 
+    });
 
     $('#preview-nav').slick({
         slidesToShow: 2,
@@ -236,38 +235,52 @@ $(document).ready(function() {
         speed: 300
     })
     new TypeIt('#typeit_corona', {
-        speed: 250,
-        loop: true,
-    }).type("Dirumah saja", {delay: 300})
-    .pause(3000)
-    .delete()
-    .type("Selalu memakai masker", {delay: 300})
-    .pause(3000)
-    .delete(6)
-    .type("Hand sanitizer", {delay: 300})
-    .pause(3000)
-    .delete()
-    .type("Menggunakan protokol kesehatan", {delay: 300})
-    .pause(5000)
-    .delete()
-    .go();
+            speed: 250,
+            loop: true,
+        }).type("Dirumah saja", {
+            delay: 300
+        })
+        .pause(3000)
+        .delete()
+        .type("Selalu memakai masker", {
+            delay: 300
+        })
+        .pause(3000)
+        .delete(6)
+        .type("Hand sanitizer", {
+            delay: 300
+        })
+        .pause(3000)
+        .delete()
+        .type("Menggunakan protokol kesehatan", {
+            delay: 300
+        })
+        .pause(5000)
+        .delete()
+        .go();
 
     new TypeIt('#slogan-donasi', {
-        speed: 250,
-        loop: true,
-    }).type("Menyenangkan..", {delay: 300})
-    .pause(3000)
-    .delete()
-    .type('Membuat hidup berkah..', {delay: 300})
-    .pause(3000)
-    .delete(14)
-    .type('sosialisme semakin meningkat', {delay: 300})
-    .pause(3000)
-    .delete()
-    .go();
+            speed: 250,
+            loop: true,
+        }).type("Menyenangkan..", {
+            delay: 300
+        })
+        .pause(3000)
+        .delete()
+        .type('Membuat hidup berkah..', {
+            delay: 300
+        })
+        .pause(3000)
+        .delete(14)
+        .type('sosialisme semakin meningkat', {
+            delay: 300
+        })
+        .pause(3000)
+        .delete()
+        .go();
 
-    $('#toggler-nav').click(function() {
-        if(!($('navbar-collapse').hasClass('show'))) {
+    $('#toggler-nav').click(function () {
+        if (!($('navbar-collapse').hasClass('show'))) {
             $('.burger-nav div:nth-child(1)').toggleClass('burger-cross1');
             $('.burger-nav div:nth-child(2)').toggleClass('burger-cross2');
         }
@@ -275,19 +288,19 @@ $(document).ready(function() {
 
 
     // Berita script
-    
-    $('.card-berita img, .tools').mouseenter(function() {
+
+    $('.card-berita img, .tools').mouseenter(function () {
         $('.card-berita img').addClass('img_berita-opacity5');
         $('.tools').removeClass('tools-hide').addClass('tools-show animate__animated animate__bounce');
     });
-    $('.card-berita img, .tools').mouseleave(function() {
+    $('.card-berita img, .tools').mouseleave(function () {
         $('.card-berita img').removeClass('img_berita-opacity5');
         $('.tools').removeClass('tools-show animate__animated animate__bounce').addClass('tools-hide');
     });
-    $('.card-body').mouseenter(function() {
+    $('.card-body').mouseenter(function () {
         $('.card-berita .card-body .card-text').addClass('animate__animated animate__fadeInUp animate__faster');
     });
-    $('.card-body').mouseleave(function() {
+    $('.card-body').mouseleave(function () {
         $('.card-berita .card-body .card-text').removeClass('animate__animated animate__fadeInUp animate__faster');
     });
 
@@ -295,7 +308,7 @@ $(document).ready(function() {
 
 
     let token = localStorage.getItem('user');
-    if(token !== null && token !== undefined && token !== "" && token !== "null") {
+    if (token !== null && token !== undefined && token !== "" && token !== "null") {
         $('#btn-login').addClass('d-none')
         $('#btn-profil').removeClass('d-none')
     } else {

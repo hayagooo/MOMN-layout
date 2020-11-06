@@ -18,8 +18,8 @@
 </head>
 
 <body >
-    <nav class="navbar navbar-expand-lg navbar-gradient navbar-light py-2 position-fixed w-100">
-        <div class="container-fluid px-4">
+    <nav class="navbar navbar-expand-lg navbar-gradient navbar-light py-3 position-fixed w-100">
+        <div class="container-fluid px-5">
             <a class="navbar-brand text-primary text-head" href="index.html">
                 <img src="../src/img/logo/Momn-white.png" class="mr-2" alt="">
                 <h5 class="position-relative d-inline-block text-head text-light" style="top: 2px;">MOMN</h5>
@@ -66,7 +66,7 @@
                         <a class="nav-link" href="game.html">Games</a>
                     </li>
                     <li class="nav-item pl-lg-0 pl-5 pt-lg-0 mr-4 pt-3">
-                        <button class="btn btn-spring-green text-dark px-3 font-weight-bold">Login</button>
+                        <button class="btn btn-spring-green text-dark px-4 font-weight-bold btn-login" onclick="redirect('login-manual.html')">Login</button>
                     </li>
                 </ul>
             </div>
@@ -76,14 +76,14 @@
         <div class="container pt-5">
             <div class="row justify-content-center mt-5 pt-4">
                 <div class="col-md-5 p-relative" style="top: 30px;">
-                    <div class="input-group shadow bg-light input-search">
+                    <form action="" method="GET" class="input-group shadow bg-light input-search">
                         <input type="text" class="form-control bold d-inline-block py-3  border-0" style="height: auto;"
                             placeholder="Cari Game">
                         <div class="">
                             <button class="btn btn-spring-green d-inline-block py-3 px-3" id=""><i
                                     class="fas fa-search"></i></button>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -218,8 +218,10 @@
                     </div>
                     <p style="font-size: 14px;" class="bold">Enter Your OpenId <i
                             class="fas ml-2 text-spring-green fa-info-circle"></i></p>
-                    <input type="text" class="col-4 py-4 form-control inputId-game" placeholder="123456789">
-                    <div class="row mt-3 ">
+                    <form action="" method="post">
+                        <input type="text" class="col-4 py-4 form-control inputId-game" placeholder="123456789">
+                    </form>
+                    <div class="row mt-5 ">
                         <div class="col-xl-4 col-6 mb-3">
                             <div class="card card-game">
                                 <img src="../src/img/game/card-game-modal-01.png" alt=""

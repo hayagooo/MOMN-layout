@@ -1,16 +1,7 @@
-@font-face {
-    font-family: arciform;
-    src: url(../fonts/Arciform.otf);
-}
 
 @font-face {
     font-family: monserrat;
     src: url(../fonts/Montserrat-Regular.ttf);
-}
-
-@font-face {
-    font-family: poppins;
-    src: url(../fonts/Poppins-Regular.ttf);
 }
 
 @font-face {
@@ -162,6 +153,10 @@ footer .container .row-nav-footer {
     color: black;
 }
 
+.btn-login {
+    border-radius: 12px;
+}
+
 @media only screen and (max-width: 767px) {
 
     .footer-right h2 {
@@ -240,7 +235,6 @@ footer .container .row-nav-footer {
     transform: translateY(0px);
     opacity: 1;
     height: 610px;
-    border-radius: 0 60px 0 0;
 }
 
 .popular-game:hover .overlay-game-popular * {
@@ -248,13 +242,11 @@ footer .container .row-nav-footer {
 }
 
 .overlay-game-popular {
-    border-radius:0;
     height: 10px;
-    border-radius: 0;
     transition: all 0.5s ease-in-out 0s;
     transform: translateY(680px);
     opacity: 0;
-    background-color: rgba(255, 255, 255, 0.5);
+    background: linear-gradient(to top, rgba(32, 189, 136, 0.5), rgba(32, 189, 136, 0.5), rgba(255, 255, 255, 0.5));
 }
 
 .overlay-game-popular * {
@@ -366,8 +358,12 @@ footer .container .row-nav-footer {
 
 .btn-signUp:hover,
 .btn-signUp-active {
-    background-color: #CFFFEF;
+    background-color: #CFFFEF!important;
     border: 0 !important;
+}
+
+.btn-signUp{
+    background-color: #fff;
 }
 
 .btn-signUp-send {
@@ -414,7 +410,7 @@ footer .container .row-nav-footer {
 
 }
 
-.jumbotron-partner .container .jumbotron-content {
+.jumbotron-partner .jumbotron-content p{
     font-size: 20px;
 }
 
@@ -746,3 +742,79 @@ nav {
 }
 
 /* end navbar */
+
+/* login-manual */
+.form-login-manual,
+.form-login-qr{
+    margin-top: 100px;
+}
+
+.form-login-manual form{
+    margin-top: 6.2rem;
+}
+
+.form-login-qr form{
+    margin-top: 7rem;
+}
+
+.form-login-manual form input,
+.form-login-qr form input{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 16px!important;
+    border-radius: 8px;
+}
+
+.form-login-manual form .input-group-prepend div ,
+.form-login-qr form .input-group-prepend div{
+    border-radius: 0  8px 8px 0!important;
+    background-color: #fff;
+}
+
+.form-login-manual form .form-group .btn,
+.form-login-qr form .form-group .btn {
+    float: right;
+    border-radius: 10px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.login-manual-right div ,
+.login-qr-right div {
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+.login-qr-right {
+    padding-left: 15%!important;
+    padding-right: 15%!important;
+}
+
+.form-login-qr form input,
+.form-login-qr form .input-group-prepend div {
+    background-color: #E4E4E4;
+}
+
+.login-manual-right{
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    width: 85%;
+    border-radius: 20px;
+    transform: translate(-50%, -50%);
+    
+}
+
+/* end login-manual */
+
+/* reseting password */
+.main-reseting-password form .form-group input {
+    font-size: 16px;
+}
+.main-reseting-password{
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* end resetting password */
