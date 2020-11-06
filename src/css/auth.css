@@ -744,13 +744,16 @@ nav {
 /* end navbar */
 
 /* login-manual */
+#left,#right,#btn-masuk,#left-qr,#right-qr{
+    transition: .3s linear;
+}
 .form-login-manual,
 .form-login-qr{
     margin-top: 100px;
 }
 
 .form-login-manual form{
-    margin-top: 6.2rem;
+    margin-top: 6rem;
 }
 
 .form-login-qr form{
@@ -779,15 +782,15 @@ nav {
     padding-right: 4rem;
 }
 
-.login-manual-right div ,
+.login-manual-right div,
 .login-qr-right div {
     border-radius: 20px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
 }
 
 .login-qr-right {
-    padding-left: 15%!important;
-    padding-right: 15%!important;
+    padding-left: 9rem;
+    padding-right: 9rem;
 }
 
 .form-login-qr form input,
@@ -804,7 +807,6 @@ nav {
     transform: translate(-50%, -50%);
     
 }
-
 /* end login-manual */
 
 /* reseting password */

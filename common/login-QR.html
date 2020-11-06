@@ -18,7 +18,7 @@
 
 <body>
     <div class="w-100 d-flex" style="flex-wrap: wrap;">
-        <div class="col-md-4 col-12 pl-0">
+        <div class="col-md-4 col-12 pl-0" id="left-qr">
             <img src="../src/img/item/pattern 27.png" alt="" class="p-absolute" width="200px">
             <div class="row justify-content-center ">
                 <div class="col-md-10 form-login-qr text-center">
@@ -52,7 +52,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-8 col-12 login-qr-right py-4  mr-0 bg-spring-green">
+        <div class="col-md-8 col-12 login-qr-right px- py-4  mr-0 bg-spring-green" id="right-qr">
             <img src="../src/img/item/pattern 26.png" alt="" class="p-absolute" width="200px"
                 style="bottom: 0;right: 0;">
             <div class="bg-light mt-4 py-5 p-relative text-center">
@@ -83,6 +83,18 @@
         }
 
     });
+    $("#right-qr").click(function(){
+        $("#right-qr").removeClass('col-md-8').addClass('col-md-4')
+        $("#left-qr").removeClass('col-md-4').addClass('col-md-8')
+        $(".login-qr-right").css({
+            'padding-left' : '2%',
+            'padding-right' : '2%'
+        })
+        $(".form-login-qr form").css({
+            'margin-top' : '6rem'
+        })
+        $(".login-qr-right div").addClass('px-3')
+    })
 </script>
 
 </html>
