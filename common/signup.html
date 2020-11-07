@@ -76,12 +76,12 @@
                         </div>
                         <div class="col-6 pl-0 mt-5">
                             <button type="button" class="btn btn-signUp-send bg-spring-green px-4 py-3"
-                                data-toggle="modal" data-target="#modal-success">
+                                data-toggle="modal" data-target="#modal-failed">
                                 <i class="fas fa-chevron-right fa-2x"></i>
                             </button>
                         </div>
                         <p class="text-dark col-12 mt-4 mb-0 pl-0" style="font-size:14px;color:grey">Sudah punya akun? <a
-                                href="login.html">Login</a></p>
+                                href="login-manual.html">Login</a></p>
                     </form>
                 </div>
             </div>
@@ -89,7 +89,7 @@
     </section>
     <div class="modal fade" id="modal-success" tabindex="-1">
         <div class="modal-dialog modal-lg modal-dialog modal-dialog-centered">
-            <div class="modal-content p-0 modal-content-signUp border-0 bg-spring-green">
+            <div class="modal-content p-4 pb-5 modal-content-signUp border-0 bg-spring-green">
                 <div class="modal-header border-0 pb-0 mb-2 px-4 mt-3">
                     <h5 class="modal-title">Proses Daftar Berhasil</h5>
                 </div>
@@ -100,14 +100,14 @@
                 </div>
                 <div class="p-0 border-0">
                     <button class="btn bg-light py-3 px-5 btn-modal-signUp"
-                        onclick="location.href='../index.html'">Login Sekarang</button>
+                        onclick="redirect('login-manual.html')">Login Sekarang</button>
                 </div>
             </div>
         </div>
     </div>
     <div class="modal fade" id="modal-failed" tabindex="-1">
         <div class="modal-dialog modal-lg modal-dialog modal-dialog-centered">
-            <div class="modal-content p-0 modal-content-signUp border-0" style="background-color: #FD445D ;">
+            <div class="modal-content p-4 pb-5 modal-content-signUp border-0" style="background-color: #FD445D ;">
                 <div class="modal-header border-0 pb-0 mb-2 px-4 mt-3">
                     <h5 class="modal-title">Ada yang salah saat pendaftaran</h5>
                 </div>
