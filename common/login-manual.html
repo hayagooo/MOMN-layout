@@ -78,27 +78,4 @@
 <script src="../src/js/slick.min.js"></script>
 <script src="../src/js/aos.js"></script>
 <script src="../src/js/script.js"></script>
-<script>
-    $("body").on('click', '.toggle-password', function () {
-        $(this).toggleClass("fa-eye fa-eye-slash");
-        var input = $("#password");
-        if (input.attr("type") === "password") {
-            input.attr("type", "text");
-        } else {
-            input.attr("type", "password");
-        }
-
-    });
-
-    $("#left input").focus(function (){
-        $("#right").attr('class', 'col-md-8 col-12 p-0 mr-0 bg-spring-green')
-        $("#left").attr('class', 'col-md-4 col-12 p-0')
-        $("#btn-masuk").addClass('w-100 my-4')
-        $(".form-login-manual").removeClass('col-md-8').addClass('col-md-10')
-        $(".form-login-manual form").css({
-            'margin-top' : '5.2rem'
-        })
-    })
-</script>
-
 </html>
