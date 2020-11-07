@@ -359,11 +359,17 @@ footer .container .row-nav-footer {
 .btn-signUp:hover,
 .btn-signUp-active {
     background-color: #CFFFEF!important;
-    border: 0 !important;
+    border: 1px solid #fff!important;
 }
 
 .btn-signUp{
     background-color: #fff;
+    border-radius: 10px;
+}
+
+.form-signUp input{
+    border-radius: 10px;
+    font-size: 18px;
 }
 
 .btn-signUp-send {
@@ -698,7 +704,7 @@ nav {
     background-position: center;
 }
 
-@media screen and (max-width: 991px) {
+@media only screen and (max-width: 991px) {
 
     .nav-item.active::after,
     .nav-item.nactive::after {
@@ -724,7 +730,7 @@ nav {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .nav-menus {
         width: 75% !important;
     }
@@ -753,7 +759,7 @@ nav {
 }
 
 .form-login-manual form{
-    margin-top: 6rem;
+    margin-top: 7.3rem;
 }
 
 .form-login-qr form{
@@ -806,6 +812,28 @@ nav {
     border-radius: 20px;
     transform: translate(-50%, -50%);
     
+}
+
+@media only screen and (max-width : 767px){
+    #main-login{
+        overflow: hidden;
+    }
+
+    .login-manual-right{
+        position: relative;
+        
+    }
+
+    .login-qr-right{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .login-qr-right div h3{
+        margin-top: 1rem!important;
+        margin-bottom: 1rem!important;
+    }
+
 }
 /* end login-manual */
 
