@@ -1033,3 +1033,81 @@ nav {
     }
 }
 /* end blog */
+/* detail-blog */
+.jumbotron-detail-blog{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/blog/blog_1.png);
+    background-position: bottom;
+    border-radius: 0;
+    background-size: 100%;
+    height: 98vh;
+}
+
+.jumbotron-detail-blog .img-1{
+    right: 0;
+    bottom: -200px;
+}
+
+.jumbotron-detail-blog .img-2{
+    width: 200px;
+    top: 100px;
+    left: 0;
+}
+
+.tag-detail-blog{
+    font-size: 25px;
+}
+
+.tanggal-detail-blog{
+    font-size: 20px;
+}
+
+.group-share *{
+    font-size: 25px;
+    transition: .2s ease-in;
+    color: grey;
+    cursor: pointer;
+}
+
+.group-share *:hover{
+    color: #14EBA2;
+}
+
+.group-share{
+    border-bottom: 1px solid #ced4da;
+    margin-bottom: 5rem;
+}
+
+@media only screen and (max-width : 767px){
+    .jumbotron-detail-blog{
+        height: 80vh;
+    }
+
+    .jumbotron-detail-blog .img-1{
+        right: 0;
+        bottom: -30px;
+        width: 200px;
+    }
+    
+    .jumbotron-detail-blog .img-2{
+        width: 150px;
+        top: 60px;
+        left: 0;
+    }
+
+    .tanggal-detail-blog{
+        font-size: 16px;
+    }
+
+    .tag-detail-blog{
+        font-size: 18px;
+    }
+
+    .judul-detail-blog{
+        font-size: 25px!important;
+    }
+
+    .group-share{
+        margin-bottom: 0;
+    }
+}
+/* end detail-blog */
