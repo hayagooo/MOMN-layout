@@ -13,17 +13,10 @@
     font-family: monserrat;
 }
 
-.poppins {
-    font-family: poppins;
-}
-
 .viga {
     font-family: viga;
 }
 
-.arciform {
-    font-family: arciform;
-}
 
 h1,
 h2,
@@ -265,6 +258,10 @@ footer .container .row-nav-footer {
     .overlay-game-popular {
         height: 680px;
     }
+
+    .nav-link , .nav-head-mobile .navbar-brand{
+        color: black!important;
+    }
 }
 
 .navbar-gradient {
@@ -418,7 +415,7 @@ footer .container .row-nav-footer {
 
 .jumbotron-partner .jumbotron-content {
     margin-top: 25.48%;
-    margin-bottom: 18%;
+    margin-bottom: 14%;
 
 }
 
@@ -464,13 +461,6 @@ footer .container .row-nav-footer {
 .carousel-control-next {
     width: auto;
     opacity: 1;
-}
-
-.carousel-next-icon .carousel-prev-icon {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background: no-repeat 50% / 100% 100%;
 }
 
 .carousel-control-prev div,
@@ -672,8 +662,15 @@ footer .container .row-nav-footer {
 }
 
 /* navbar */
-#navbar-primary {
+#navbar-primary,#navbar-secondary {
     transition: 0.3s ease;
+}
+
+@media only screen and (max-width : 767px){
+    #navbar-primary,#navbar-secondary {
+        padding-left: 0px!important;
+        padding-right: 0px!important;
+    }
 }
 
 nav {
@@ -866,3 +863,173 @@ nav {
     transform: translate(-50%, -50%);
 }
 /* end resetting password */
+
+/* blog */
+.jumbotron-blog {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/background/blog.png);
+    border-radius: 0px;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.jumbotron-blog .carousel-inner .carousel-item div{
+    padding: 4rem 0;
+}
+
+.carousel-blog-content{
+    background: transparent;
+    padding: 0 10rem 0 35rem!important;
+}
+
+.jumbotron-blog img{
+    position: absolute;
+    right: 0;
+    width: 200px;
+    bottom: -180px;
+}
+
+.blog-left form .form-group,
+.blog-left form .form-group input,
+.blog-left form .form-group .btn{
+    border-radius: 10px!important;
+}
+
+.blog-left form .form-group{
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.blog-left form .form-group .btn-spring-green{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.blog-left form input{
+    font-size: 18px!important;
+    padding: 1.8rem 1.5rem!important;
+}
+
+.btn-dropdown .fa-caret-left {
+    transform: rotate(-90deg);
+}
+
+.btn-dropdown .fa-caret-left.toggle{
+    transform: rotate(90deg);
+}
+
+.option-row{
+    display: none;
+    border-radius: 10px;
+}
+
+.option{
+ border-radius: 0px!important;
+}
+
+.option:hover {
+    background-color: #CFFFEF;
+    border-radius: 10px;
+}
+
+.tags{
+    border-radius: 10px;
+    padding: 1rem 1rem;
+    text-align: center;
+    background-color: #CFFFEF;
+    transition: .3s ease-in;
+}
+
+.tags:hover,
+.tags.active{
+    background-color: #20BD88;
+    color: #fff;
+}
+
+.popular-article,.other{
+    border-radius: 10px;
+    border: 1px solid #ced4da;
+    transition: .2s ease-in;
+}
+
+.popular-article:hover,
+.other:hover,
+.other.active,
+.popular-article.active{
+    border: 1px solid #14EBA2;
+}
+
+.box-blog{
+    transition: .2s ease-in;
+    border-radius: 10px;
+    border: 1px solid #ced4da;
+    background-color: #ffffff;
+}
+
+.box-blog:hover{
+    border: 1px solid #ffffff;
+    box-shadow:  0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.box-blog div .hr{
+    height: 4px;
+    border-radius: 4px;
+    width: 100px;
+}
+
+.box-blog div h4{
+    font-size: 1.3rem;
+}
+
+.box-blog div p{
+    font-size: 14px;
+}
+
+.box-blog img{
+    border-radius: 10px;
+}
+
+.box-blog:hover .btn{
+    background-color: #20bd88;
+    box-shadow:  0 .6rem 1rem rgba(32, 189, 136, .5);
+    color: #FFF;
+
+}
+
+.pattern-bottom{
+    transform: rotate(180deg);
+    position: absolute;
+    bottom: -90rem!important;
+    width: 200px;
+    left: -20px;
+}
+
+.blog-right{
+    padding-left: 3rem;
+}
+
+@media only screen and (max-width : 767px){
+    .jumbotron-blog .carousel-inner .carousel-item div{
+        padding: 2rem 0;
+    }
+
+    .carousel-blog-content{
+        background: transparent;
+        padding: 0!important;
+        text-align: center;
+    }
+    
+    .carousel-blog-content h1{
+        font-size: 30px;
+    }
+
+    .blog-right{
+        padding-left: 23px!important;
+        margin-top: 3rem;
+
+    }
+
+    .blog-left{
+        padding-right: 0;
+    }
+}
+/* end blog */
