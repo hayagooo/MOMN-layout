@@ -1272,6 +1272,7 @@ nav {
 
 .link-video {
     border-radius: 15px;
+    margin-bottom: 120px;
 
 }
 
@@ -1301,6 +1302,9 @@ nav {
 .wrapper.collapse-fitur .sidebar ul li {
     list-style: none;
     padding: 0 0 0 15px;
+}
+.list-fitur-right{
+    display: block;
 }
 
 .list-fitur-right li {
@@ -1384,6 +1388,8 @@ nav {
 
     .list-fitur-right {
         margin-bottom: 2rem;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .list-fitur-right li {
